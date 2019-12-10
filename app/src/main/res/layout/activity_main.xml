@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="#E2DCAA"
+            android:text="Scorekeeper"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/teamA_textview"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textSize="28sp"
+            style="@style/AppTheme"
+            />
+
+        <TextView
+            android:id="@+id/teamB_textview"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            style="@style/AppTheme"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/teamC_textview"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:text="Team C"
+            style="@style/AppTheme"
+            android:textSize="28sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/teamA_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="28sp"
+            style="@style/Background"/>
+
+        <TextView
+            android:id="@+id/teamB_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="28sp"
+            style="@style/Background"/>
+
+        <TextView
+            android:id="@+id/teamC_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="28sp"
+            style="@style/Background"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/increase_TeamA_Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/increase_TeamB_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/increase_TeamC_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/decrease_TeamB_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="362dp" />
+
+        <Button
+            android:id="@+id/decrease_TeamA_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="362dp" />
+
+
+        <Button
+            android:id="@+id/decrease_TeamC_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="362dp" />
+    </TableRow>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radiotwopoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/radiofourpoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/radiosixpoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+    </RadioGroup>
+
+
+</TableLayout>
